@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "aea363dd-9a45-42aa-9721-b6865c4e6dd2": {
+      "ProjectGuid": "aea363dd-9a45-42aa-9721-b6865c4e6dd2",
+      "DisplayName": "MY CLINIC",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
