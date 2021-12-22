@@ -94,5 +94,13 @@ namespace MY_CLINIC
         {
             HideSubMenu();
         }
+
+        private void BtnSignOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form login = new LogIn();
+            login.Closed += (s, args) => this.Close();
+            login.ShowDialog();
+        }
     }
 }
