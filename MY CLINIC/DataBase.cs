@@ -91,6 +91,7 @@ namespace MY_CLINIC
             d.SelectCommand.ExecuteNonQuery();
             cn.Close();
         }
+        //i want to die
 
     }
 }
