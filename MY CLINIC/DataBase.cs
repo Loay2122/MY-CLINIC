@@ -73,5 +73,24 @@ namespace MY_CLINIC
             //    model.Items.Add(carsTableAdapter.GetByBrand(brand.Text)[i][2]);
             //}
         }
+        public virtual DataTable Get_AllEmp()
+        {
+            cn.Open();
+            SqlDataAdapter d = new("Select Name from Accounts", cn);
+            DataTable dt = new();
+            d.Fill(dt);
+            cn.Close();
+            return dt;
+        }
+        public static void Update_Salary(string name,float sal)
+        {
+            string query = "UPDATE Accounts SET Salary = "+sal+" WHERE Name="+name+"";
+            cn.Open();
+            SqlCommand cmd = cn.CreateCommand();
+            SqlDataAdapter d = new(query, cn);
+            d.SelectCommand.ExecuteNonQuery();
+            cn.Close();
+        }
+
     }
 }

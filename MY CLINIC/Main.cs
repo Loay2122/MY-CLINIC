@@ -22,11 +22,11 @@ namespace MY_CLINIC
                 panelEmpSubMenu.Visible = false;
                 panelReportSubMenu.Visible = false;
             }
-            if (GlobalVar.hour <= 11)
+            if (GlobalVar.hour <= 11 && GlobalVar.hour >= 4)
             {
                 labelMsg.Text = "Good Morning, " + GlobalVar.n + ".";
             }
-            else if(GlobalVar.hour >= 11 && GlobalVar.hour < 5)
+            else if(GlobalVar.hour >= 11 && GlobalVar.hour <= 16)
             {
                 labelMsg.Text = "Good Afternoon, " + GlobalVar.n + ".";
             }
