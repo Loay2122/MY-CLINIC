@@ -44,8 +44,8 @@
             this.BtnFinancialReport = new System.Windows.Forms.Button();
             this.panelEmpSubMenu = new System.Windows.Forms.Panel();
             this.BtnShowEmp = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.BtnAddEmp = new System.Windows.Forms.Button();
+            this.BtnManageEmp = new System.Windows.Forms.Button();
             this.panelAppointmentSubMenu = new System.Windows.Forms.Panel();
             this.BtnAppointmentSchedule = new System.Windows.Forms.Button();
             this.BtnAddAppointment = new System.Windows.Forms.Button();
@@ -55,6 +55,7 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelMsg = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.panelSettingsSubMenu.SuspendLayout();
@@ -76,7 +77,7 @@
             this.panelSideMenu.Controls.Add(this.panelReportSubMenu);
             this.panelSideMenu.Controls.Add(this.BtnFinancialReport);
             this.panelSideMenu.Controls.Add(this.panelEmpSubMenu);
-            this.panelSideMenu.Controls.Add(this.BtnAddEmp);
+            this.panelSideMenu.Controls.Add(this.BtnManageEmp);
             this.panelSideMenu.Controls.Add(this.panelAppointmentSubMenu);
             this.panelSideMenu.Controls.Add(this.BtnAppointmentSubMenu);
             this.panelSideMenu.Controls.Add(this.panelLogo);
@@ -281,7 +282,7 @@
             // 
             this.panelEmpSubMenu.BackColor = System.Drawing.Color.SteelBlue;
             this.panelEmpSubMenu.Controls.Add(this.BtnShowEmp);
-            this.panelEmpSubMenu.Controls.Add(this.button4);
+            this.panelEmpSubMenu.Controls.Add(this.BtnAddEmp);
             this.panelEmpSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEmpSubMenu.Location = new System.Drawing.Point(0, 324);
             this.panelEmpSubMenu.Name = "panelEmpSubMenu";
@@ -305,39 +306,39 @@
             this.BtnShowEmp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnShowEmp.UseVisualStyleBackColor = true;
             // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(225, 34);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Add Employee";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // BtnAddEmp
             // 
             this.BtnAddEmp.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnAddEmp.FlatAppearance.BorderSize = 0;
-            this.BtnAddEmp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.BtnAddEmp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.BtnAddEmp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BtnAddEmp.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnAddEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAddEmp.ForeColor = System.Drawing.Color.SteelBlue;
-            this.BtnAddEmp.Location = new System.Drawing.Point(0, 273);
+            this.BtnAddEmp.Location = new System.Drawing.Point(0, 0);
             this.BtnAddEmp.Name = "BtnAddEmp";
-            this.BtnAddEmp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnAddEmp.Size = new System.Drawing.Size(225, 51);
-            this.BtnAddEmp.TabIndex = 2;
-            this.BtnAddEmp.Text = "Manage Employees";
+            this.BtnAddEmp.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.BtnAddEmp.Size = new System.Drawing.Size(225, 34);
+            this.BtnAddEmp.TabIndex = 0;
+            this.BtnAddEmp.Text = "Add Employee";
             this.BtnAddEmp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAddEmp.UseVisualStyleBackColor = true;
-            this.BtnAddEmp.Click += new System.EventHandler(this.BtnAddEmp_Click);
+            // 
+            // BtnManageEmp
+            // 
+            this.BtnManageEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnManageEmp.FlatAppearance.BorderSize = 0;
+            this.BtnManageEmp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.BtnManageEmp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.BtnManageEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnManageEmp.ForeColor = System.Drawing.Color.SteelBlue;
+            this.BtnManageEmp.Location = new System.Drawing.Point(0, 273);
+            this.BtnManageEmp.Name = "BtnManageEmp";
+            this.BtnManageEmp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnManageEmp.Size = new System.Drawing.Size(225, 51);
+            this.BtnManageEmp.TabIndex = 2;
+            this.BtnManageEmp.Text = "Manage Employees";
+            this.BtnManageEmp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnManageEmp.UseVisualStyleBackColor = true;
+            this.BtnManageEmp.Click += new System.EventHandler(this.BtnAddEmp_Click);
             // 
             // panelAppointmentSubMenu
             // 
@@ -448,6 +449,7 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.SteelBlue;
+            this.panelChildForm.Controls.Add(this.labelMsg);
             this.panelChildForm.Controls.Add(this.pictureBox1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(246, 0);
@@ -466,6 +468,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // labelMsg
+            // 
+            this.labelMsg.AutoSize = true;
+            this.labelMsg.Location = new System.Drawing.Point(17, 20);
+            this.labelMsg.Name = "labelMsg";
+            this.labelMsg.Size = new System.Drawing.Size(0, 20);
+            this.labelMsg.TabIndex = 1;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -483,6 +493,7 @@
             this.panelEmpSubMenu.ResumeLayout(false);
             this.panelAppointmentSubMenu.ResumeLayout(false);
             this.panelChildForm.ResumeLayout(false);
+            this.panelChildForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -502,8 +513,8 @@
         private Button BtnFinancialReport;
         private Panel panelEmpSubMenu;
         private Button BtnShowEmp;
-        private Button button4;
         private Button BtnAddEmp;
+        private Button BtnManageEmp;
         private Panel panelAppointmentSubMenu;
         private Button BtnAppointmentSchedule;
         private Button BtnAddAppointment;
@@ -517,5 +528,6 @@
         private Button BtnHelp;
         private PictureBox pictureBox1;
         private Panel panelFooter;
+        private Label labelMsg;
     }
 }

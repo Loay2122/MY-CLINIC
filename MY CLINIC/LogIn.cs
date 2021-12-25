@@ -15,6 +15,7 @@ namespace MY_CLINIC
         public LogIn()
         {
             InitializeComponent();
+            TxtPass.PasswordChar = '*';
         }
 
 
@@ -23,6 +24,8 @@ namespace MY_CLINIC
             bool i = DataBase.Login(TxtUser.Text, TxtPass.Text);
             if (i)
             {
+                GlobalVar.b = DataBase.IsAdmin(TxtUser.Text,TxtPass.Text);
+                GlobalVar.n = DataBase.Get_Empname(TxtUser.Text, TxtPass.Text);
                 this.Hide();
                 Form main = new Main();
                 main.ShowDialog();
@@ -40,6 +43,11 @@ namespace MY_CLINIC
             //{
             //    MessageBox.Show(ex.Message);
             //}
+        }
+
+        private void checkBoxShowPass_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtPass.PasswordChar = checkBoxShowPass.Checked ? '\0' : '*';
         }
     }
 }

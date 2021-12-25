@@ -15,6 +15,22 @@ namespace MY_CLINIC
         public Main()
         {
             InitializeComponent();
+            if (!GlobalVar.b)
+            {
+                BtnFinancialReport.Visible = false;
+                BtnManageEmp.Visible = false;
+                panelEmpSubMenu.Visible = false;
+                panelReportSubMenu.Visible = false;
+            }
+            if (GlobalVar.hour <= 11)
+            {
+                labelMsg.Text = "Good Morning, " + GlobalVar.n + ".";
+            }
+            else if(GlobalVar.hour >= 11 && GlobalVar.hour < 5)
+            {
+                labelMsg.Text = "Good Afternoon, " + GlobalVar.n + ".";
+            }
+            else labelMsg.Text = "Good Evening, " + GlobalVar.n + ".";
         }
         private void HideSubMenu()
         {

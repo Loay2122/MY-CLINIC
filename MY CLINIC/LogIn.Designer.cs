@@ -34,26 +34,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkBoxShowPass = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtUser
             // 
-            this.TxtUser.Location = new System.Drawing.Point(140, 142);
+            this.TxtUser.Location = new System.Drawing.Point(78, 145);
             this.TxtUser.Name = "TxtUser";
             this.TxtUser.Size = new System.Drawing.Size(145, 27);
             this.TxtUser.TabIndex = 0;
             // 
             // TxtPass
             // 
-            this.TxtPass.Location = new System.Drawing.Point(140, 225);
+            this.TxtPass.Location = new System.Drawing.Point(78, 209);
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.Size = new System.Drawing.Size(145, 27);
             this.TxtPass.TabIndex = 1;
             // 
             // BtnLogIn
             // 
-            this.BtnLogIn.Location = new System.Drawing.Point(122, 280);
+            this.BtnLogIn.Location = new System.Drawing.Point(110, 283);
             this.BtnLogIn.Name = "BtnLogIn";
             this.BtnLogIn.Size = new System.Drawing.Size(94, 29);
             this.BtnLogIn.TabIndex = 2;
@@ -73,7 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 192);
+            this.label2.Location = new System.Drawing.Point(12, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 20);
             this.label2.TabIndex = 4;
@@ -89,6 +90,17 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // checkBoxShowPass
+            // 
+            this.checkBoxShowPass.AutoSize = true;
+            this.checkBoxShowPass.Location = new System.Drawing.Point(78, 242);
+            this.checkBoxShowPass.Name = "checkBoxShowPass";
+            this.checkBoxShowPass.Size = new System.Drawing.Size(132, 24);
+            this.checkBoxShowPass.TabIndex = 6;
+            this.checkBoxShowPass.Text = "Show Password";
+            this.checkBoxShowPass.UseVisualStyleBackColor = true;
+            this.checkBoxShowPass.CheckedChanged += new System.EventHandler(this.checkBoxShowPass_CheckedChanged);
+            // 
             // LogIn
             // 
             this.AcceptButton = this.BtnLogIn;
@@ -96,6 +108,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(337, 334);
+            this.Controls.Add(this.checkBoxShowPass);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -118,5 +131,6 @@
         private Label label1;
         private Label label2;
         private PictureBox pictureBox1;
+        private CheckBox checkBoxShowPass;
     }
 }
