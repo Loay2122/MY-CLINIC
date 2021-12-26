@@ -25,3 +25,31 @@ D:\Uni shii\Projects\SWE I Project\MY CLINIC\MY CLINIC\MY CLINIC\bin\Debug\net6.
 D:\Uni shii\Projects\SWE I Project\MY CLINIC\MY CLINIC\MY CLINIC\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Uni shii\Projects\SWE I Project\MY CLINIC\MY CLINIC\MY CLINIC\obj\Debug\net6.0-windows\MY_CLINIC.LogIn.resources
 D:\Uni shii\Projects\SWE I Project\MY CLINIC\MY CLINIC\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.csproj.CopyComplete
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\MY CLINIC.exe
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\MY CLINIC.deps.json
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\MY CLINIC.runtimeconfig.json
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\MY CLINIC.dll
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\ref\MY CLINIC.dll
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\MY CLINIC.pdb
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\Dapper.dll
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\swe project\MY CLINIC\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.csproj.AssemblyReference.cache
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY_CLINIC.LogIn.resources
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY_CLINIC.Main.resources
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY_CLINIC.Properties.Resources.resources
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.csproj.GenerateResource.cache
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.GeneratedMSBuildEditorConfig.editorconfig
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.AssemblyInfoInputs.cache
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.AssemblyInfo.cs
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.csproj.CoreCompileInputs.cache
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.csproj.CopyComplete
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.dll
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\ref\MY CLINIC.dll
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.pdb
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY CLINIC.genruntimeconfig.cache
+D:\swe project\MY CLINIC\obj\Debug\net6.0-windows\MY_CLINIC.Regestration.resources

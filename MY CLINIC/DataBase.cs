@@ -10,7 +10,7 @@ namespace MY_CLINIC
 {
     internal class DataBase
     {
-        public static string Con = "Data Source=(LocalDb)\\MSSQLLocalDB;Initial Catalog=MyClinic; Integrated Security=True";
+        public static string Con = "Data Source=(.)\\MSSQLLocalDB;Initial Catalog=MyClinic; Integrated Security=True";
         public static SqlConnection cn = new(Con);
         public static bool Login(string user, string pass)
         {
@@ -95,3 +95,4 @@ namespace MY_CLINIC
 
     }
 }
+

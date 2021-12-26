@@ -730,19 +730,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lolor\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Uni shii\\Projects\\SWE I Project\\MY CLINIC\\MY CLINIC\\MY CLINIC\\MY CLINIC.csproj",
+      "projectUniqueName": "D:\\swe project\\MY CLINIC\\MY CLINIC.csproj",
       "projectName": "MY CLINIC",
-      "projectPath": "D:\\Uni shii\\Projects\\SWE I Project\\MY CLINIC\\MY CLINIC\\MY CLINIC\\MY CLINIC.csproj",
-      "packagesPath": "C:\\Users\\lolor\\.nuget\\packages\\",
-      "outputPath": "D:\\Uni shii\\Projects\\SWE I Project\\MY CLINIC\\MY CLINIC\\MY CLINIC\\obj\\",
+      "projectPath": "D:\\swe project\\MY CLINIC\\MY CLINIC.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "D:\\swe project\\MY CLINIC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lolor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -799,7 +799,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
