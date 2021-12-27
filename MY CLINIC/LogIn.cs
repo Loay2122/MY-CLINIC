@@ -24,13 +24,14 @@ namespace MY_CLINIC
             bool i = DataBase.Login(TxtUser.Text, TxtPass.Text);
             if (i)
             {
-                GlobalVar.b = DataBase.IsAdmin(TxtUser.Text,TxtPass.Text);
+                GlobalVar.b = DataBase.IsAdmin(TxtUser.Text, TxtPass.Text);
                 GlobalVar.n = DataBase.Get_Empname(TxtUser.Text, TxtPass.Text);
                 this.Hide();
                 Form main = new Main();
                 main.ShowDialog();
                 this.Close();
             }
+            else MessageBox.Show("Incorrect username or password!");
             //try
             //{
             //    DataBase.register(textBox1.Text,textBox2.Text,textBox3.Text);

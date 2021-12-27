@@ -122,6 +122,31 @@ namespace MY_CLINIC
         private void BtnAddEmp_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new Regestration());
+            HideSubMenu();
+        }
+
+        private void BtnWorkExpenses_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SettingWorkX());
+            HideSubMenu();
+        }
+
+        private void BtnWorkHours_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SettingWorkT());
+            HideSubMenu();
+        }
+
+        private void BtnAddPatient_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new AddPatient());
+            HideSubMenu();
+        }
+
+        private void BtnAddAppointment_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new AddAppointment());
+            HideSubMenu();
         }
     }
 }

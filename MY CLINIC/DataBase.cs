@@ -10,7 +10,7 @@ namespace MY_CLINIC
 {
     internal class DataBase
     {
-        public static string Con = "Data Source=(.)\\MSSQLLocalDB;Initial Catalog=MyClinic; Integrated Security=True";
+        public static string Con = "Data Source=(LocalDb)\\MSSQLLocalDB;Initial Catalog=MyClinic; Integrated Security=True";
         public static SqlConnection cn = new(Con);
         public static bool Login(string user, string pass)
         {
@@ -42,13 +42,12 @@ namespace MY_CLINIC
         }
         public static void Register_Patient(string name, int age, string phone, string gender, string email, string his)
         {
-            string query = "Insert Into Patients (Name,Age,Gender,Phone,E_mail,Chronic_Conditions) Values("+name+","+age+","+gender+","+phone+","+email+","+his+")";
+            string query = "Insert Into Patients (Name,Age,Gender,Phone,E_mail,Chronic_Conditions) Values('"+name+"','"+age+"','"+gender+"','"+phone+"','"+email+"','"+his+"')";
             cn.Open();
             SqlCommand cmd = cn.CreateCommand();
             SqlDataAdapter d = new(query, cn);
             d.SelectCommand.ExecuteNonQuery();
             cn.Close();
-
         }
         public static string Get_Empname(string user, string pass)
         {
@@ -59,7 +58,7 @@ namespace MY_CLINIC
             cn.Close(); 
             return dt.Rows[0][0].ToString();
         }
-        public virtual DataTable Get_AllPatient()
+        public static DataTable Get_AllPatient()
         {
             cn.Open();
             SqlDataAdapter d = new("Select Name from Patients", cn);
@@ -73,7 +72,7 @@ namespace MY_CLINIC
             //    model.Items.Add(carsTableAdapter.GetByBrand(brand.Text)[i][2]);
             //}
         }
-        public virtual DataTable Get_AllEmp()
+        public static DataTable Get_AllEmp()
         {
             cn.Open();
             SqlDataAdapter d = new("Select Name from Accounts", cn);
@@ -84,15 +83,78 @@ namespace MY_CLINIC
         }
         public static void Update_Salary(string name,float sal)
         {
-            string query = "UPDATE Accounts SET Salary = "+sal+" WHERE Name="+name+"";
+            string query = "UPDATE Accounts SET Salary = '"+sal+"' WHERE Name='"+name+"'";
             cn.Open();
             SqlCommand cmd = cn.CreateCommand();
             SqlDataAdapter d = new(query, cn);
             d.SelectCommand.ExecuteNonQuery();
             cn.Close();
         }
-        //i want to die
-
+        public static DataTable Get_AllServices()
+        {
+            cn.Open();
+            SqlDataAdapter d = new("Select Name from Services", cn);
+            DataTable dt = new();
+            d.Fill(dt);
+            cn.Close();
+            return dt;
+        }
+        public static float Get_ServPrice(string name)
+        {
+            cn.Open();
+            SqlDataAdapter d = new("Select Price from Services where Name='" + name + "'", cn);
+            DataTable dt = new();
+            d.Fill(dt);
+            cn.Close();
+            return (float)dt.Rows[0][0];
+        }
+        public static string Get_ServID(string name)
+        {
+            cn.Open();
+            SqlDataAdapter d = new("Select ID from Services where Name='" + name + "'", cn);
+            DataTable dt = new();
+            d.Fill(dt);
+            cn.Close();
+            return dt.Rows[0][0].ToString();
+        }
+        public static void Update_ServPrice(string name, float price)
+        {
+            string query = "UPDATE Services SET Price= '" + price + "' WHERE Name='" + name + "'";
+            cn.Open();
+            SqlCommand cmd = cn.CreateCommand();
+            SqlDataAdapter d = new(query, cn);
+            d.SelectCommand.ExecuteNonQuery();
+            cn.Close();
+        }
+        public static void Add_toSchedule(int id, string Pname, string Ename, string type, float price, string Date, string hour)
+        {
+            string query = "Insert Into Schedule (ID, Patient_Name, Emp_Name, Type, Price, AppDate, Start_End_Hour)) " +
+                "Values('" + id + "','" + Pname + "','" + Ename + "','" + type + "','" + price + "','" + Date + "','"+hour+"')";
+            cn.Open();
+            SqlCommand cmd = cn.CreateCommand();
+            SqlDataAdapter d = new(query, cn);
+            d.SelectCommand.ExecuteNonQuery();
+            cn.Close();
+        }
+        public static void Delete_Schedule()
+        {
+            string query = "Delete From Schedule";
+            cn.Open();
+            SqlCommand cmd = cn.CreateCommand();
+            SqlDataAdapter d = new(query, cn);
+            d.SelectCommand.ExecuteNonQuery();
+            cn.Close();
+        }
+        public static void Register_Appointment(int id, string Pname, string Ename, string type, float price, string Date, string hour)
+        {
+            string query = "Insert Into Appointments (ID, Patient_Name, Emp_Name, Type, Price, AppDate, Start_End_Hour)) " +
+                "Values('" + id + "','" + Pname + "','" + Ename + "','" + type + "','" + price + "','" + Date + "','" + hour + "')";
+            cn.Open();
+            SqlCommand cmd = cn.CreateCommand();
+            SqlDataAdapter d = new(query, cn);
+            d.SelectCommand.ExecuteNonQuery();
+            cn.Close();
+        }
     }
 }
 

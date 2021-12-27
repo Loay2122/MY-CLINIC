@@ -2,6 +2,12 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="AddAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -9,6 +15,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Regestration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SettingWorkT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SettingWorkX.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
