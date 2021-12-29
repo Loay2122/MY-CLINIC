@@ -19,7 +19,7 @@ namespace MY_CLINIC
         public static string Date= day.ToString()+"/"+month.ToString()+"/"+year.ToString();
         public static int Start = 0;
         public static int End = 0;
-        public static string Generate_ID(string service)
+        public static int Generate_ID(string service)
         {
             string hol = "";
             hol = "" + c + "" + "" + day + "" + "" + month + "";
@@ -28,7 +28,7 @@ namespace MY_CLINIC
             c++;
             hol = hol + "" + year1 + "";
             hol = hol + DataBase.Get_ServID(service);
-            return hol;
+            return int.Parse(hol);
         }
         public static string Generate_Hours(int s,int e)
         {

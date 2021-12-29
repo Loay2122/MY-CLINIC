@@ -21,6 +21,12 @@ namespace MY_CLINIC
             {
                 comboPatient.Items.Add(DataBase.Get_AllPatient().Rows[i][0]);
             }
+            int count1 = DataBase.Get_AllServices().Rows.Count;
+            for (int i = 0; i < count1; i++)
+
+            {
+                comboServ1.Items.Add(DataBase.Get_AllServices().Rows[i][0]);
+            }
         }
 
         private void BtnExitAppointment_Click(object sender, EventArgs e)
@@ -32,10 +38,25 @@ namespace MY_CLINIC
         {
             try
             {
-                //Put
-                //Your code
-                //Here
-                
+                if (GlobalVar.Date != DataBase.Get_ScheduleDate())
+                {
+                    DataBase.Delete_Schedule();
+                    DataBase.Register_Appointment(GlobalVar.Generate_ID(comboServ1.SelectedItem.ToString()), comboPatient.SelectedItem.ToString()
+                    , GlobalVar.n, comboServ1.SelectedItem.ToString(), DataBase.Get_ServPrice(comboServ1.SelectedItem.ToString()),
+                    GlobalVar.Date, GlobalVar.Generate_Hours(GlobalVar.Start, 3));
+                    DataBase.Add_toSchedule(GlobalVar.Generate_ID(comboServ1.SelectedItem.ToString()), comboPatient.SelectedItem.ToString()
+                    , GlobalVar.n, comboServ1.SelectedItem.ToString(), DataBase.Get_ServPrice(comboServ1.SelectedItem.ToString()),
+                    GlobalVar.Date, GlobalVar.Generate_Hours(GlobalVar.Start, DataBase.Get_ServiceTime(comboServ1.SelectedItem.ToString())));
+                }
+                else
+                {
+                    DataBase.Register_Appointment(GlobalVar.Generate_ID(comboServ1.SelectedItem.ToString()), comboPatient.SelectedItem.ToString()
+                    , GlobalVar.n, comboServ1.SelectedItem.ToString(), DataBase.Get_ServPrice(comboServ1.SelectedItem.ToString()),
+                    GlobalVar.Date, GlobalVar.Generate_Hours(GlobalVar.Start, 3));
+                    DataBase.Add_toSchedule(GlobalVar.Generate_ID(comboServ1.SelectedItem.ToString()), comboPatient.SelectedItem.ToString()
+                    , GlobalVar.n, comboServ1.SelectedItem.ToString(), DataBase.Get_ServPrice(comboServ1.SelectedItem.ToString()),
+                    GlobalVar.Date, GlobalVar.Generate_Hours(GlobalVar.Start, DataBase.Get_ServiceTime(comboServ1.SelectedItem.ToString())));
+                }
                 this.Close();
             }
             catch

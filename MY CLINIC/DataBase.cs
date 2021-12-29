@@ -155,6 +155,25 @@ namespace MY_CLINIC
             d.SelectCommand.ExecuteNonQuery();
             cn.Close();
         }
+        public static string Get_ScheduleDate()
+        {
+            cn.Open();
+            SqlDataAdapter d = new("Select AppDate from Schedule", cn);
+            DataTable dt = new();
+            d.Fill(dt);
+            cn.Close();
+            return dt.Rows[0][0].ToString();
+        }
+        public static int Get_ServiceTime(string name)
+        {
+            cn.Open();
+            SqlDataAdapter d = new("Select Etime from Services Where Name = '"+name+"'", cn);
+            DataTable dt = new();
+            d.Fill(dt);
+            cn.Close();
+            return (int)dt.Rows[0][0];
+        }
+
     }
 }
 
