@@ -118,5 +118,10 @@ namespace MY_CLINIC
             login.Closed += (s, args) => this.Close();
             login.ShowDialog();
         }
+
+        private void BtnAddEmp_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Regestration());
+        }
     }
 }
